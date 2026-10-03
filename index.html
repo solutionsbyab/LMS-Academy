@@ -144,7 +144,7 @@
     gap: 20px;
   }
   .brand{
-    display: flex; align-items: baseline; gap: 9px;
+    display: flex; align-items: center; gap: 10px;
     font-family: var(--f-display);
     font-weight: 500;
     font-variation-settings: "opsz" 24, "wght" 500, "SOFT" 40;
@@ -154,12 +154,10 @@
     white-space: nowrap;
   }
   .brand-mark{
-    font-family: var(--f-mono);
-    font-size: 11px;
-    letter-spacing: .06em;
-    background: var(--red);
-    color: var(--paper);
-    padding: 4px 6px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    flex: none;
   }
   .primary-nav{ display: flex; gap: 22px; }
   .primary-nav a{
@@ -497,7 +495,7 @@
 <header class="top" id="top">
   <div class="top-inner">
     <a href="#top" class="brand" aria-label="LMA Academy — home">
-      <span class="brand-mark">LMA</span><span>Academy</span>
+      <img class="brand-mark" src="assets/lma-logo.jpg" alt="" width="40" height="40" /><span>LMA Academy</span>
     </a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="#programme">Programme</a>
