@@ -3,12 +3,12 @@
 
     --paper:        #FFFFFF;
     --paper-2:      #F3F1EE;
-    --ink:          #050A30;
-    --stone:        #585A63;
+    --ink:          #0A0A0A;
+    --stone:        #5A5A5A;
     --red:          #E8231F;
     --red-2:        #B81918;
-    --rule:         #E4E5EA;
-    --grey-on-dark: #C7C9D6;
+    --rule:         #E5E5E5;
+    --grey-on-dark: #C9C9C9;
     --rule-on-dark: rgba(255,255,255,.14);
 
     --f-display: "Fraunces", ui-serif, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
@@ -136,7 +136,7 @@
   .btn-red{ background: var(--red); color: var(--paper); }
   .btn-red:hover{ background: var(--red-2); }
   .btn-solid{ background: var(--ink); color: var(--paper); }
-  .btn-solid:hover{ background: #141A40; }
+  .btn-solid:hover{ background: #262626; }
   .btn-ghost{ border-color: var(--ink); color: var(--ink); }
   .btn-ghost:hover{ background: var(--ink); color: var(--paper); }
   .btn-ghost.on-dark{ border-color: var(--paper); color: var(--paper); }
@@ -464,9 +464,9 @@
   .gallery-item:hover img, .gallery-item:focus-within img{ transform: scale(1.04); }
   .gallery-item{ overflow: hidden; border: 1px solid var(--rule); }
   .gallery-item figcaption{
-    font-family: var(--f-mono); font-size: 11px;
-    letter-spacing: .04em; color: var(--stone);
-    padding: 10px 2px 0;
+    font-family: var(--f-body); font-weight: 600; font-size: 14px;
+    color: var(--ink);
+    padding: 12px 2px 0;
   }
 
   /* ── Partners ────────────────────────────────────────────── */
@@ -585,7 +585,7 @@
 
   /* ── Anti-forced-dark rescue ═════════════════════════════ */
   @media (prefers-color-scheme: dark){
-    html, body{ background: #FFFFFF !important; color: #050A30 !important; }
+    html, body{ background: #FFFFFF !important; color: #0A0A0A !important; }
   }
 
 /* ── Active nav state (multi-page) ──────────────────────── */
